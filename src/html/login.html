@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | O2 TV by Geri</title>
+    
+    <script src="../lib/webOSTV.js" charset="utf-8"></script>
+    <script src="../lib/webOSTV-dev.js" charset="utf-8"></script>
+    <script src="../lib/fetch.js" charset="utf-8"></script>
+    <script src="../lib/sha256.js" charset="utf-8"></script>
+
+    <script src="../js/service/device.js" charset="utf-8"></script>
+    <script src="../js/service/o2.js" charset="utf-8"></script>
+    <script src="../js/service/kaltura.js" charset="utf-8"></script>
+
+    <script src="../js/page/login.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body onload="Login.init()">
+    <div id="login-wrapper">
+        <div id="login-form-wrapper">
+            <form id="login-form" action="javascript:;" onsubmit="Login.login()">
+                <div id="login-text-wrapper">
+                    <span id="login-text">Login</span>
+                </div>
+                <div id="login-email-wrapper">
+                    <svg id="login-email-icon" width="48" height="48" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C13.9777 0 16.4 2.42229 16.4 5.4C16.4 8.37771 13.9777 10.8 11 10.8C8.02226 10.8 5.59998 8.37771 5.59998 5.4C5.59998 2.42229 8.02226 0 11 0ZM11 1.54286C8.87469 1.54286 7.14283 3.27471 7.14283 5.4C7.14283 7.52529 8.87469 9.25714 11 9.25714C13.1253 9.25714 14.8571 7.52529 14.8571 5.4C14.8571 3.27471 13.1253 1.54286 11 1.54286Z" fill="#FFFC" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.199951 23.2401V20.8233C0.199951 16.2899 3.94524 12.6001 8.54681 12.6001H13.4531C18.0547 12.6001 21.7999 16.2899 21.7999 20.8233V23.2401C21.7999 23.6581 21.4528 24.0001 21.0285 24.0001H0.97138C0.547094 24.0001 0.199951 23.6581 0.199951 23.2401ZM13.4531 14.1201H8.54681C4.79381 14.1201 1.74281 17.1259 1.74281 20.8233V22.4801H20.2571V20.8233C20.2571 17.1259 17.2061 14.1201 13.4531 14.1201Z" fill="#FFFC" />
+                    </svg>
+                    <input id="login-email-input" name="login-email" placeholder="E-mail" type="text" value="">
+                </div>
+                <div id="login-password-wrapper">
+                    <svg id="login-password-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1706 23.9673C19.7874 23.9673 21.0999 22.651 21.0999 21.038V11.2989C21.0999 9.68203 19.7836 8.36954 18.1706 8.36954H18.0564V5.7065C18.0564 2.56032 15.4961 0 12.3499 0C9.20376 0 6.64344 2.56032 6.64344 5.7065V8.36954H6.52931C4.91247 8.36954 3.59998 9.68584 3.59998 11.2989V21.038C3.59998 22.651 4.91628 23.9673 6.52931 23.9673H18.1706ZM8.16518 5.7065C8.16518 3.39727 10.0407 1.52173 12.3499 1.52173C14.6592 1.52173 16.5347 3.39727 16.5347 5.7065V8.36954H8.16518V5.7065ZM6.52931 9.89127C5.75323 9.89127 5.12171 10.5228 5.12171 11.2989V21.038C5.12171 21.8141 5.75323 22.4456 6.52931 22.4456H18.1706C18.9467 22.4456 19.5782 21.8141 19.5782 21.038V11.2989C19.5782 10.5228 18.9467 9.89127 18.1706 9.89127H6.52931Z" fill="#FFFC" />
+                        <path d="M12.35 17.1196C12.7685 17.1196 13.1108 16.7772 13.1108 16.3587V13.6957C13.1108 13.2772 12.7685 12.9348 12.35 12.9348C11.9315 12.9348 11.5891 13.2772 11.5891 13.6957V16.3587C11.5891 16.7772 11.9315 17.1196 12.35 17.1196Z" fill="#FFFC" />
+                    </svg>
+                    <input id="login-password-input" name="login-password" placeholder="Password" type="password" value="">
+                </div>
+                <div id="login-button-wrapper">
+                    <button id="login-button" type="submit" disabled>
+                        <span id="login-button-text">Login</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

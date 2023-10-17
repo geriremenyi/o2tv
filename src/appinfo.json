@@ -1,0 +1,11 @@
+{
+  "id": "com.remenyi-elekes.o2tv",
+  "version": "1.0.0",
+  "vendor": "geriremenyi",
+  "type": "web",
+  "main": "html/splash.html",
+  "title": "O2TV",
+  "icon": "img/logo_80.png",
+  "largeIcon": "img/logo_130.png",
+  "iconColor": "#0000ad"
+}

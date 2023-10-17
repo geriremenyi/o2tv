@@ -1,0 +1,15 @@
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin:0;
+  background-color: #000066;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}

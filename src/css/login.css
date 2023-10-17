@@ -1,0 +1,97 @@
+body {
+  background-image: url("../img/login_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#login-wrapper {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+  background-color: #000066;
+}
+
+#login-form-wrapper {
+  padding: 24px 48px;
+}
+
+#login-text-wrapper {
+  text-align: center;
+}
+
+#login-text {
+  font-size: 72px;
+}
+
+#login-email-wrapper {
+  position: relative;
+  padding: 48px 0;
+}
+
+#login-email-icon {
+  position: absolute;
+  top: 64px;
+  left: 16px;
+}
+
+#login-email-input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 48px;
+  padding: 16px 0 16px 80px;
+  background-color: #fff3;;
+  color: #fffc;
+  border: none;
+}
+
+#login-email-input::placeholder {
+  color: #fffc;
+}
+
+#login-password-wrapper {
+  position: relative;
+}
+
+#login-password-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+#login-password-input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 48px;
+  padding: 16px 0 16px 80px;
+  background-color: #fff3;
+  color: #fffc;
+  border: none;
+}
+
+#login-password-input::placeholder {
+  color: #fffc;
+}
+
+#login-button-wrapper {
+  padding: 48px 0;
+}
+
+#login-button {
+  width: 100%;
+  padding: 32px;
+  border: none;
+  background-color: #41B6E6;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#login-button:disabled {
+  cursor: default;
+}
